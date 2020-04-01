@@ -9,6 +9,7 @@
 #import "CUSBaseView.h"
 #import "UIColor+CUSColor.h"
 #import "UIView+CUSFrame.h"
+#import "Toast.h"
 
 @implementation CUSBaseView
 

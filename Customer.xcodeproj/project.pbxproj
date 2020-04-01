@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		180592D3243204E50004520F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180592D2243204E50004520F /* AppDelegate.m */; };
-		180592D9243204E50004520F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180592D8243204E50004520F /* ViewController.m */; };
-		180592DC243204E50004520F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180592DA243204E50004520F /* Main.storyboard */; };
 		180592DE243204E80004520F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180592DD243204E80004520F /* Assets.xcassets */; };
 		180592E1243204E80004520F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180592DF243204E80004520F /* LaunchScreen.storyboard */; };
 		180592E4243204E80004520F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180592E3243204E80004520F /* main.m */; };
@@ -51,9 +49,6 @@
 		180592CE243204E50004520F /* Customer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Customer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180592D1243204E50004520F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		180592D2243204E50004520F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		180592D7243204E50004520F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		180592D8243204E50004520F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		180592DB243204E50004520F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180592DD243204E80004520F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180592E0243204E80004520F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180592E2243204E80004520F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +69,9 @@
 		18DBC60E24349AB800C860BC /* UIView+CUSFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CUSFrame.m"; sourceTree = "<group>"; };
 		18DBC61024349C0800C860BC /* NSString+CUSMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CUSMD5.h"; sourceTree = "<group>"; };
 		18DBC61124349C0800C860BC /* NSString+CUSMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CUSMD5.m"; sourceTree = "<group>"; };
+		18DBC6132434A50000C860BC /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		18DBC6142434A51E00C860BC /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		18DBC6152434A57A00C860BC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18E780002432119E00BF5108 /* CUSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSBaseViewController.h; sourceTree = "<group>"; };
 		18E780012432119E00BF5108 /* CUSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSBaseViewController.m; sourceTree = "<group>"; };
 		18E78003243211FB00BF5108 /* CUSTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSTabViewController.h; sourceTree = "<group>"; };
@@ -147,13 +145,11 @@
 				18E77FEF243210A900BF5108 /* src */,
 				180592D1243204E50004520F /* AppDelegate.h */,
 				180592D2243204E50004520F /* AppDelegate.m */,
-				180592D7243204E50004520F /* ViewController.h */,
-				180592D8243204E50004520F /* ViewController.m */,
-				180592DA243204E50004520F /* Main.storyboard */,
 				180592DD243204E80004520F /* Assets.xcassets */,
 				180592DF243204E80004520F /* LaunchScreen.storyboard */,
 				180592E2243204E80004520F /* Info.plist */,
 				180592E3243204E80004520F /* main.m */,
+				18DBC6152434A57A00C860BC /* PrefixHeader.pch */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -347,6 +343,8 @@
 		18E780282432311700BF5108 /* constant */ = {
 			isa = PBXGroup;
 			children = (
+				18DBC6132434A50000C860BC /* Define.h */,
+				18DBC6142434A51E00C860BC /* Config.h */,
 			);
 			path = constant;
 			sourceTree = "<group>";
@@ -476,7 +474,6 @@
 			files = (
 				180592E1243204E80004520F /* LaunchScreen.storyboard in Resources */,
 				180592DE243204E80004520F /* Assets.xcassets in Resources */,
-				180592DC243204E50004520F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +541,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DBC60C2434984300C860BC /* NSDate+CUSString.m in Sources */,
-				180592D9243204E50004520F /* ViewController.m in Sources */,
 				180592D3243204E50004520F /* AppDelegate.m in Sources */,
 				18E7801B24321C8100BF5108 /* CUSToastView.m in Sources */,
 				180592E4243204E80004520F /* main.m in Sources */,
@@ -593,14 +589,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		180592DA243204E50004520F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				180592DB243204E50004520F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		180592DF243204E80004520F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -729,6 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LB3BYSC5G;
+				GCC_PREFIX_HEADER = Customer/PrefixHeader.pch;
 				INFOPLIST_FILE = Customer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -748,6 +737,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LB3BYSC5G;
+				GCC_PREFIX_HEADER = Customer/PrefixHeader.pch;
 				INFOPLIST_FILE = Customer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
