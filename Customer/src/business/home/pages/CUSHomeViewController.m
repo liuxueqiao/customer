@@ -19,6 +19,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [Toast show:[NSString stringWithFormat:@"hello 你好呀！嗨%ld", random()]];
+}
+
 /*
 #pragma mark - Navigation
 

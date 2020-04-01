@@ -7,8 +7,6 @@
 //
 
 #import "CUSBaseViewController.h"
-#import "UIColor+CUSColor.h"
-#import "Toast.h"
 
 @interface CUSBaseViewController ()
 

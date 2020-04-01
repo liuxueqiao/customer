@@ -25,6 +25,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = UIColor.CUS_grayColor;
+        self.layer.cornerRadius = 2.0;
         [[UIApplication sharedApplication].keyWindow addSubview:self];
         [self mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(0);
