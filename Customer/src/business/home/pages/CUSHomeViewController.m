@@ -7,6 +7,7 @@
 //
 
 #import "CUSHomeViewController.h"
+#import "AlertUtil.h"
 
 @interface CUSHomeViewController ()
 
@@ -22,6 +23,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [Toast show:[NSString stringWithFormat:@"hello 你好呀！嗨%ld", random()]];
+    
+    [AlertUtil alert:@"你好啊"];
 }
 
 /*
