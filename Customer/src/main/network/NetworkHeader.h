@@ -9,7 +9,7 @@
 #ifndef NetworkHeader_h
 #define NetworkHeader_h
 
-#import "path.h"
+#import "Path.h"
 #import "WebService.h"
 
 
