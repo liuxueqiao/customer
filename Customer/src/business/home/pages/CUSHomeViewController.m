@@ -8,6 +8,7 @@
 
 #import "CUSHomeViewController.h"
 #import "AlertUtil.h"
+#import "Loading.h"
 
 @interface CUSHomeViewController ()
 
@@ -18,11 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [Loading show];
+    [Loading show];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [Loading remove];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+               [Loading remove];
+           });
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     
     [AlertUtil alert:@"你好啊" confirm:^{
         

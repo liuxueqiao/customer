@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WebService : NSObject
 
 @property (nonatomic, assign) BOOL showErrorToast; // 默认YES
+@property (nonatomic, assign) BOOL showLoading; // 默认YES
 
 @property (nonatomic, strong) void(^progressBlock)(NSProgress *progress);
 @property (nonatomic, strong) void(^successBlock)(NSDictionary *response);

@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "Toast.h"
 #import "Config.h"
+#import "Loading.h"
 
 @implementation WebService
 
@@ -18,6 +19,7 @@
     self = [super init];
     if (self) {
         _showErrorToast = YES;
+        _showLoading = YES;
     }
     return self;
 }
@@ -38,6 +40,10 @@
     if (!reachability.reachable) {
         [Toast show:@"请检查网络连接"];
         return;
+    }
+    
+    if (self.showLoading) {
+        [Loading show];
     }
     
     // 2.请求
