@@ -11,7 +11,7 @@
 
 @interface CUSMineViewController ()
 @property (nonatomic, strong) CUSMineViewModel *viewModel;
-
+@property (nonatomic, strong) EventEmitter *emitter;
 @end
 
 @implementation CUSMineViewController
@@ -19,11 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.CUS_redColor;
+    
+    _emitter = [EventEmitter addListener:kLoginSuccessNotification then:^(id  _Nonnull params) {
+        [Toast show:[NSString stringWithFormat:@"hello 你好呀！嗨%@", params]];
+    }];
 }
 
 - (void)bindViewModel {
     _viewModel = [CUSMineViewModel new];
     
+}
+
+- (void)dealloc {
+    [self.emitter remove];
 }
 
 /*

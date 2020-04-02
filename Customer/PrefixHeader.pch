@@ -14,4 +14,7 @@
 
 #import "Define.h"
 
+#import "Notification.h"
+#import "EventEmitter.h"
+
 #endif /* PrefixHeader_pch */
