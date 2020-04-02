@@ -27,6 +27,7 @@
 		18DBC6422435C63600C860BC /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6412435C63500C860BC /* DatePicker.m */; };
 		18DBC64A2435CA3A00C860BC /* CUSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6492435CA3A00C860BC /* CUSLabel.m */; };
 		18DBC6522435CDAC00C860BC /* Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6512435CDAC00C860BC /* Loading.m */; };
+		18DBC6562435E33600C860BC /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6552435E33600C860BC /* EmptyView.m */; };
 		18E780022432119E00BF5108 /* CUSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E780012432119E00BF5108 /* CUSBaseViewController.m */; };
 		18E78005243211FB00BF5108 /* CUSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E78004243211FB00BF5108 /* CUSTabViewController.m */; };
 		18E780082432123400BF5108 /* CUSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E780072432123400BF5108 /* CUSHomeViewController.m */; };
@@ -102,6 +103,8 @@
 		18DBC6492435CA3A00C860BC /* CUSLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSLabel.m; sourceTree = "<group>"; };
 		18DBC6502435CDAC00C860BC /* Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
 		18DBC6512435CDAC00C860BC /* Loading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loading.m; sourceTree = "<group>"; };
+		18DBC6542435E33600C860BC /* EmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		18DBC6552435E33600C860BC /* EmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
 		18E780002432119E00BF5108 /* CUSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSBaseViewController.h; sourceTree = "<group>"; };
 		18E780012432119E00BF5108 /* CUSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSBaseViewController.m; sourceTree = "<group>"; };
 		18E78003243211FB00BF5108 /* CUSTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSTabViewController.h; sourceTree = "<group>"; };
@@ -238,6 +241,15 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		18DBC6532435E32700C860BC /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				18DBC6542435E33600C860BC /* EmptyView.h */,
+				18DBC6552435E33600C860BC /* EmptyView.m */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
 		18E77FEF243210A900BF5108 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +372,7 @@
 		18E77FFB243210A900BF5108 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				18DBC6532435E32700C860BC /* EmptyView */,
 				18DBC64F2435CD8900C860BC /* Loading */,
 				18DBC6472435CA2C00C860BC /* CUSLabel */,
 				18DBC63F2435C63500C860BC /* DatePicker */,
@@ -631,6 +644,7 @@
 				18E780022432119E00BF5108 /* CUSBaseViewController.m in Sources */,
 				18E7802124321CAB00BF5108 /* Toast.m in Sources */,
 				18DBC62E243583F400C860BC /* EventEmitter.m in Sources */,
+				18DBC6562435E33600C860BC /* EmptyView.m in Sources */,
 				18DBC61224349C0800C860BC /* NSString+CUSMD5.m in Sources */,
 				18DBC6232435661200C860BC /* CUSMineViewModel.m in Sources */,
 				18DBC609243494C900C860BC /* NSDate+CUSValue.m in Sources */,
