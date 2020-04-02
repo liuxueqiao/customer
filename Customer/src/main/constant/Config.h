@@ -13,7 +13,7 @@
 
 #define DEBUG
 
-
+#define BASE_URL @""
 
 
 #endif /* Config_h */

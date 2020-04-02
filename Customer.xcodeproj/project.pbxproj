@@ -79,6 +79,7 @@
 		18DBC6182434B18A00C860BC /* WebService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
 		18DBC61A2434B1F300C860BC /* AlertUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
 		18DBC61B2434B1F300C860BC /* AlertUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
+		18DBC61D2435658F00C860BC /* NetworkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkHeader.h; sourceTree = "<group>"; };
 		18E780002432119E00BF5108 /* CUSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSBaseViewController.h; sourceTree = "<group>"; };
 		18E780012432119E00BF5108 /* CUSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSBaseViewController.m; sourceTree = "<group>"; };
 		18E78003243211FB00BF5108 /* CUSTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSTabViewController.h; sourceTree = "<group>"; };
@@ -314,6 +315,7 @@
 		18E77FFD243210A900BF5108 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				18DBC61D2435658F00C860BC /* NetworkHeader.h */,
 				18DBC6162434B0D900C860BC /* path.h */,
 				18DBC6172434B18A00C860BC /* WebService.h */,
 				18DBC6182434B18A00C860BC /* WebService.m */,
