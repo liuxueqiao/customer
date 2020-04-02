@@ -17,6 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self bindViewModel];
+}
+
+#pragma mark - viewModel
+- (void)bindViewModel {
+    // subclass implementation
+}
+
+#pragma mark - reloadData
+- (void)reloadDatas:(id)params {
+    // subclass implementation
+}
+- (void)reloadView:(NSInteger)index params:(id)params {
+    NSInteger _index = [self.navigationController.viewControllers indexOfObject:self] + index;
+    if (self.navigationController.viewControllers.count > _index) {
+        CUSBaseViewController *vc = self.navigationController.viewControllers[_index];
+        if ([vc performSelector:@selector(reloadDatas:)]) {
+            [vc reloadDatas:params];
+        }
+    }
 }
 
 /*

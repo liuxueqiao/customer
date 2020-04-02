@@ -11,5 +11,7 @@
 
 static NSString * const path = @"path";
 
+static NSString * const kUserInfo = @"kUserInfo";
+
 
 #endif /* path_h */

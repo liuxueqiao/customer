@@ -7,8 +7,10 @@
 //
 
 #import "CUSMineViewController.h"
+#import "CUSMineViewModel.h"
 
 @interface CUSMineViewController ()
+@property (nonatomic, strong) CUSMineViewModel *viewModel;
 
 @end
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.CUS_redColor;
+}
+
+- (void)bindViewModel {
+    _viewModel = [CUSMineViewModel new];
+    
 }
 
 /*

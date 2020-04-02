@@ -14,6 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CUSBaseViewController : UIViewController
 
+// 关联viewModel
+- (void)bindViewModel;
+
+// 刷新数据
+- (void)reloadDatas:(id __nullable)params;
+- (void)reloadView:(NSInteger)index params:(id __nullable)params;
+
 @end
 
 NS_ASSUME_NONNULL_END

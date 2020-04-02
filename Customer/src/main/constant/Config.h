@@ -9,9 +9,8 @@
 #ifndef Config_h
 #define Config_h
 
-
-
-#define DEBUG
+// debug配置；发布正式环境时需要注释此句代码。
+#define CUS_DEBUG
 
 #define BASE_URL @""
 

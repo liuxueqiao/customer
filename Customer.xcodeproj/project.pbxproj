@@ -20,6 +20,9 @@
 		18DBC61224349C0800C860BC /* NSString+CUSMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC61124349C0800C860BC /* NSString+CUSMD5.m */; };
 		18DBC6192434B18A00C860BC /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6182434B18A00C860BC /* WebService.m */; };
 		18DBC61C2434B1F300C860BC /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC61B2434B1F300C860BC /* AlertUtil.m */; };
+		18DBC620243565F600C860BC /* CUSBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC61F243565F600C860BC /* CUSBaseViewModel.m */; };
+		18DBC6232435661200C860BC /* CUSMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6222435661200C860BC /* CUSMineViewModel.m */; };
+		18DBC6262435679600C860BC /* CUSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBC6252435679600C860BC /* CUSUser.m */; };
 		18E780022432119E00BF5108 /* CUSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E780012432119E00BF5108 /* CUSBaseViewController.m */; };
 		18E78005243211FB00BF5108 /* CUSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E78004243211FB00BF5108 /* CUSTabViewController.m */; };
 		18E780082432123400BF5108 /* CUSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E780072432123400BF5108 /* CUSHomeViewController.m */; };
@@ -80,6 +83,12 @@
 		18DBC61A2434B1F300C860BC /* AlertUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
 		18DBC61B2434B1F300C860BC /* AlertUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
 		18DBC61D2435658F00C860BC /* NetworkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkHeader.h; sourceTree = "<group>"; };
+		18DBC61E243565F600C860BC /* CUSBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSBaseViewModel.h; sourceTree = "<group>"; };
+		18DBC61F243565F600C860BC /* CUSBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSBaseViewModel.m; sourceTree = "<group>"; };
+		18DBC6212435661200C860BC /* CUSMineViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSMineViewModel.h; sourceTree = "<group>"; };
+		18DBC6222435661200C860BC /* CUSMineViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSMineViewModel.m; sourceTree = "<group>"; };
+		18DBC6242435679600C860BC /* CUSUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSUser.h; sourceTree = "<group>"; };
+		18DBC6252435679600C860BC /* CUSUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSUser.m; sourceTree = "<group>"; };
 		18E780002432119E00BF5108 /* CUSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSBaseViewController.h; sourceTree = "<group>"; };
 		18E780012432119E00BF5108 /* CUSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSBaseViewController.m; sourceTree = "<group>"; };
 		18E78003243211FB00BF5108 /* CUSTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSTabViewController.h; sourceTree = "<group>"; };
@@ -252,6 +261,8 @@
 		18E77FF7243210A900BF5108 /* datas */ = {
 			isa = PBXGroup;
 			children = (
+				18DBC6212435661200C860BC /* CUSMineViewModel.h */,
+				18DBC6222435661200C860BC /* CUSMineViewModel.m */,
 			);
 			path = datas;
 			sourceTree = "<group>";
@@ -308,6 +319,8 @@
 		18E77FFC243210A900BF5108 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				18DBC6242435679600C860BC /* CUSUser.h */,
+				18DBC6252435679600C860BC /* CUSUser.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -339,6 +352,8 @@
 				18E780012432119E00BF5108 /* CUSBaseViewController.m */,
 				18DBC604243491F400C860BC /* CUSBaseView.h */,
 				18DBC605243491F400C860BC /* CUSBaseView.m */,
+				18DBC61E243565F600C860BC /* CUSBaseViewModel.h */,
+				18DBC61F243565F600C860BC /* CUSBaseViewModel.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -561,13 +576,16 @@
 				18E780022432119E00BF5108 /* CUSBaseViewController.m in Sources */,
 				18E7802124321CAB00BF5108 /* Toast.m in Sources */,
 				18DBC61224349C0800C860BC /* NSString+CUSMD5.m in Sources */,
+				18DBC6232435661200C860BC /* CUSMineViewModel.m in Sources */,
 				18DBC609243494C900C860BC /* NSDate+CUSValue.m in Sources */,
 				18DBC606243491F400C860BC /* CUSBaseView.m in Sources */,
 				18E78005243211FB00BF5108 /* CUSTabViewController.m in Sources */,
+				18DBC620243565F600C860BC /* CUSBaseViewModel.m in Sources */,
 				18DBC60F24349AB800C860BC /* UIView+CUSFrame.m in Sources */,
 				18E7800B2432125600BF5108 /* CUSMineViewController.m in Sources */,
 				18DBC61C2434B1F300C860BC /* AlertUtil.m in Sources */,
 				18DBC6192434B18A00C860BC /* WebService.m in Sources */,
+				18DBC6262435679600C860BC /* CUSUser.m in Sources */,
 				18E780082432123400BF5108 /* CUSHomeViewController.m in Sources */,
 				18E780142432199200BF5108 /* UIColor+CUSColor.m in Sources */,
 			);
