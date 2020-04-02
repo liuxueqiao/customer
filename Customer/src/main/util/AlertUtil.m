@@ -43,11 +43,7 @@
         [alertController addAction:cancelAction];
     }
     
-    UIViewController *alertVC = [[UIViewController alloc] init];
-    [[UIApplication sharedApplication].keyWindow addSubview:alertVC.view];
-    [alertVC presentViewController:alertController animated:YES completion:^{
-      [alertVC.view removeFromSuperview];
-    }];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 
