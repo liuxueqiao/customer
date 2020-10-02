@@ -21,8 +21,17 @@
     
     [self _config];
     [self _setViewControllersAndItems];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
     
-    
+}
+#pragma mark - app进入活跃状态
+- (void)applicationDidBecomeActive {
+    NSLog(@"");
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 - (void)_config {
